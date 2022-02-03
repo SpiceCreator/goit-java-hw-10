@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -22,7 +23,9 @@ public class Utils {
         return Arrays.stream(inputArray)
                 .flatMap(s -> Arrays.stream(s.split(",")))
                 .map(String::strip)
+                .mapToInt(Integer::parseInt)
                 .sorted()
+                .mapToObj(Integer::toString)
                 .collect(Collectors.joining(", "));
     }
 

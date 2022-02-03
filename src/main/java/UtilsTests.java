@@ -18,7 +18,7 @@ public class UtilsTests {
 
         System.out.println("Utils.getUpperCaseReversedList(list) = " + Utils.getUpperCaseReversedList(list));
 
-        String[] inputArray = new String[] {"1, 2, 0", "4, 5"};
+        String[] inputArray = new String[] {"1, 2, 10, 27", "4, 51, 2"};
         System.out.println("Utils.getAllSortedNumbers(inputArray) = " + Utils.getAllSortedNumbers(inputArray));
 
 //        Utils.getRandomNumbersStream(25214903917l, 11, 2 ^ 48).forEach(System.out::println);
